@@ -1,0 +1,13 @@
+Source: deepamehta
+Section: misc
+Priority: extra
+Maintainer: Juergen Neumann <juergen@junes.eu>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: http://www.deepamehta.de
+
+Package: deepamehta
+Architecture: all
+Depends: adduser, default-jdk
+Description: Semantic software platform for collaboration and knowledge management.
+ DeepaMehta is a software platform for collaboration and knowledge management. The DeepaMehta user interface is build according to research in cognitive psychology and accommodates the knowledge building process of the individuals based on mind maps and concept maps.
