@@ -14,9 +14,9 @@
     RewriteRule ^/?$ http://localhost:8080/de.deepamehta.webclient [P] 
     RewriteLog /var/log/apache2/deepamehta-ssl-rewrite.log    
 
-    ProxyRequests Off
+    ProxyStatus On
     ProxyPreserveHost Off
-    AllowEncodedSlashes On
+    AllowEncodedSlashes NoDecode
     
     <Proxy *>
 	Order deny,allow
@@ -26,7 +26,7 @@
     <location />
 	Order allow,deny
 	Allow from all
-	ProxyPass http://localhost:8080/
+	ProxyPass http://localhost:8080/ nocanon
 	ProxyPassReverse http://localhost:8080/
     </location>
 
